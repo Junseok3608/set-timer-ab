@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.time {
+  font-size: 36px;
+  margin: 0 0 10px;
+}
+
+.end-button {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.end-button:disabled {
+  background-color: #f00;
+  border-color: #f00;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+#time-input {
+  font-size: 18px;
+  padding: 10px;
+  width: 60px;
+}
+
+#start-button {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#start-button:disabled {
+  background-color: #ccc;
+  border-color: #ccc;
+  color: #000;
+  cursor: not-allowed;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal p {
+  font-size: 16px;
+}
